@@ -3,6 +3,7 @@ import 'package:flutter_app_offline/database/database.dart';
 import 'package:flutter_app_offline/home_screen.dart';
 
 
+
 void main() async {
 
   WidgetsFlutterBinding.ensureInitialized();
@@ -17,10 +18,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
 
-
-      ),
       home: InviteApp(),
     );
   }

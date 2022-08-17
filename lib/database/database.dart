@@ -6,8 +6,7 @@ import 'package:sqflite/sqflite.dart';
 class DB {
 
 
-  static Database _db;
-
+static Database _db;
 
   static int get _version => 1;
 
@@ -80,12 +79,12 @@ class DB {
     if (res.isNotEmpty) {
       for (int i = 0; i < res.length; i++) {
         todos.add(INVITE(
+
           id: res[i]["$TABLE_ROW_ID"],
           name: res[i]["$TABLE_ROW_TASKNAME"],
           num: res[i]["$TABLE_ROW_GUEST_NUM"],
           address: res[i]["$TABLE_ROW_GUEST_ADDRESS"],
           status: res[i]["$TABLE_ROW_VISTING_STATUS"],
-
 
           isComplete: res[i]["$TABLE_ROW_ISCOMPLETE"] == "true" ? true : false,
 

@@ -47,6 +47,7 @@ class _InviteAppState extends State<InviteApp> {
   String name = "";
 
   Future<List<INVITE>> getInvite() async {
+
     inviteList = await DB.getInvitations();
 
     setState(() {});

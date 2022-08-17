@@ -27,7 +27,6 @@ class _EditScreenState extends State<EditScreen> {
     changeNum = widget.invite.num;
     changeAddress = widget.invite.address;
 
-
     super.initState();
   }
 

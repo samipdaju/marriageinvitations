@@ -106,26 +106,6 @@ class _SettingScreenState extends State<SettingScreen> {
                   fontSize: 35,
                 color: Color(0xffBF933B),
               ),)),
-              Text('Show phone number ',
-                style: TextStyle(
-                    fontSize: 35,
-                    color: Color(0xffBF933B),
-                    fontWeight: FontWeight.bold
-
-                ),),
-              TextButton(onPressed: () async {
-                SharedPreferences prefs = await SharedPreferences.getInstance();
-
-                prefs.setString("lang", "Nep");
-
-                getuserPref();
-
-
-              }, child: Text('Yes',
-                style: TextStyle(
-                  fontSize: 35,
-                  color: Color(0xffBF933B),
-                ),)),
 
 
 
